@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Image Wizard",
+  "version": "0.2.0",
+  "identifier": "com.soundtrackgeek.imagewizard",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://127.0.0.1:1438",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "create": false,
+        "title": "Image Wizard",
+        "width": 1440,
+        "height": 960,
+        "minWidth": 920,
+        "minHeight": 640,
+        "backgroundColor": "#141310"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost blob: data:; style-src 'self' 'unsafe-inline'; connect-src ipc: http://ipc.localhost 'self'",
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$HOME/.image-wizard/inputs/**",
+          "$HOME/.image-wizard/outputs/**"
+        ]
+      }
+    }
+  },
+  "bundle": { "active": false }
+}

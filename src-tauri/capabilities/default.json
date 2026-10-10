@@ -1,0 +1,11 @@
+{
+  "identifier": "main",
+  "description": "Studio window, user file pickers and exports",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "dialog:allow-open",
+    "dialog:allow-save",
+    "opener:allow-open-url"
+  ]
+}

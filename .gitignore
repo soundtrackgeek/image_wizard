@@ -1,0 +1,14 @@
+/node_modules/
+/dist/
+/src-tauri/target/
+/output/playwright/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.venv/
+.env
+/output/verification/
+/src-tauri/icons/android/
+/src-tauri/icons/ios/
+/src-tauri/gen/schemas/
+/.playwright-cli/

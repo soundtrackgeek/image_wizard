@@ -1,6 +1,6 @@
 # Image Wizard product brief
 
-Prepared 2026-10-10. Status: research complete; visual direction awaiting user selection.
+Prepared 2026-10-10. Midnight Atelier selected and implemented in version 0.2.0. See [verification.md](verification.md) for actual checks and limits.
 
 ## User and job
 
